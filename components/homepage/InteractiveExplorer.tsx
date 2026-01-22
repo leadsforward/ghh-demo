@@ -92,15 +92,15 @@ export default function InteractiveExplorer() {
         >
           {/* Interactive Kitchen Visual - Scaffolded for Future Enhancement */}
           <div className="relative bg-white rounded-[16px] overflow-hidden shadow-lg border border-neutral-200">
-            <div className="relative h-[500px] lg:h-[600px] bg-neutral-100">
-              <Image
-                src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=1200&q=90"
-                alt="Interactive kitchen design explorer - Gold Heart Homes"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 1280px"
-                loading="lazy"
-              />
+              <div className="relative h-[500px] lg:h-[600px] bg-neutral-100">
+                <Image
+                  src="https://goldhearthomes.com/wp-content/uploads/2022/06/kitchen-remodeling-kansas-city.jpg"
+                  alt="Interactive kitchen design explorer - Gold Heart Homes"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 1280px"
+                  loading="lazy"
+                />
 
               {/* Interactive Zones - Data attributes for future JS */}
               <div className="absolute inset-0 grid grid-cols-5 grid-rows-4 gap-2 p-4">

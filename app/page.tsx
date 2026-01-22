@@ -97,8 +97,8 @@ export default function HomePage() {
       <StructuredData data={faqSchema} />
       <StructuredData data={localBusinessSchema} />
       <Hero />
-      <FeaturedWork />
       <OutcomeChips />
+      <FeaturedWork />
       <Process />
       <CoreBenefits />
       <InteractiveExplorer />

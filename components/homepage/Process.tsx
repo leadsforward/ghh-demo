@@ -9,19 +9,19 @@ const steps = [
   {
     title: "Consultation",
     description: "We understand your goals and define scope before design begins.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+    image: "https://goldhearthomes.com/wp-content/uploads/2022/07/DSC_0001.jpg",
     alt: "Design consultation in Kansas City",
   },
   {
     title: "Design & Planning",
     description: "Detailed plans and material selections. You approve everything before construction.",
-    image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&q=80",
+    image: "https://goldhearthomes.com/wp-content/uploads/2022/07/DSC_0007.jpg",
     alt: "Design planning and material selection",
   },
   {
     title: "Construction",
     description: "One team manages your project from start to finish with clear communication.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+    image: "https://goldhearthomes.com/wp-content/uploads/2022/09/007_1600x1067_mls.jpg",
     alt: "Professional construction management",
   },
 ];

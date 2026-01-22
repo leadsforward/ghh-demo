@@ -7,18 +7,18 @@ import { ArrowRight } from "lucide-react";
 
 const featuredProjects = [
   {
-    title: "Kitchen Remodeling",
-    location: "Overland Park, KS",
-    image: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=1200&q=90",
-    alt: "Modern kitchen remodel in Overland Park, Kansas",
-    href: "/services/kitchen-remodeling",
+    title: "Kitchen Remodel",
+    location: "Kansas City, MO",
+    image: "https://goldhearthomes.com/wp-content/uploads/2022/06/kitchen-remodeling-kansas-city.jpg",
+    alt: "Kitchen remodeling project in Kansas City - Gold Heart Homes",
+    href: "/projects/kitchen-remodel-kansas-city",
   },
   {
-    title: "Whole-Home Remodel",
-    location: "Leawood, KS",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=90",
-    alt: "Whole-home renovation in Leawood, Kansas",
-    href: "/services/whole-home-remodeling",
+    title: "Living Room Remodel",
+    location: "Kansas City, MO",
+    image: "https://goldhearthomes.com/wp-content/uploads/2022/06/modern-living-room-remodel-kansas-city.jpg",
+    alt: "Living room remodeling project in Kansas City - Gold Heart Homes",
+    href: "/projects/living-room-remodel-kansas-city",
   },
 ];
 
@@ -48,14 +48,14 @@ export default function FeaturedWork() {
   }, []);
 
   return (
-    <section className="bg-white py-20 lg:py-32">
+    <section className="bg-neutral-50 py-20 lg:py-32">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
             Featured Work
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Real projects from Kansas City homeowners.
+            Real projects from Kansas City homeowners. See how we transform spaces with thoughtful design and disciplined execution.
           </p>
         </div>
 

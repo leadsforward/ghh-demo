@@ -8,14 +8,19 @@ import { ArrowRight } from "lucide-react";
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setIsVisible(true);
     
-    // Subtle parallax effect
+    // Check for reduced motion preference
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setPrefersReducedMotion(mediaQuery.matches);
+    
+    // Subtle parallax effect (disabled if reduced motion)
     const handleScroll = () => {
-      if (heroRef.current) {
+      if (!prefersReducedMotion && heroRef.current) {
         const rect = heroRef.current.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom > 0) {
           setScrollY(window.scrollY);
@@ -25,7 +30,7 @@ export default function Hero() {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [prefersReducedMotion]);
 
   return (
     <section ref={heroRef} className="relative bg-white">
@@ -34,12 +39,12 @@ export default function Hero() {
         <div
           className="absolute inset-0"
           style={{
-            transform: `translateY(${scrollY * 0.3}px)`,
-            willChange: "transform",
+            transform: prefersReducedMotion ? "none" : `translateY(${scrollY * 0.3}px)`,
+            willChange: prefersReducedMotion ? "auto" : "transform",
           }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=1920&q=90"
+            src="https://goldhearthomes.com/wp-content/uploads/2022/06/remodeled-kitchen-with-new-appliances-kansas-city.jpg"
             alt="Premium kitchen remodel in Kansas City - Gold Heart Homes"
             fill
             className="object-cover scale-105"
@@ -74,7 +79,7 @@ export default function Hero() {
 
             {/* Subhead */}
             <p className="text-lg text-white/90 mb-10 leading-relaxed">
-              Design-led remodeling for kitchens, bathrooms, whole-home renovations, additions, and exterior projects in Kansas City. One team, full accountability.
+              Interior and exterior remodeling, additions, and commercial projects in Kansas City. Design-led approach with full-scope capability. One team, full accountability.
             </p>
 
             {/* CTAs */}

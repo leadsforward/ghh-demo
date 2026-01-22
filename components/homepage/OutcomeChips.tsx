@@ -9,28 +9,28 @@ const differentiators = [
     title: "One Team, Full Accountability",
     description:
       "Design and construction under one roof. No handoffs, no confusion.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=90",
+    image: "https://goldhearthomes.com/wp-content/uploads/2022/09/005_1600x1067_mls.jpg",
     alt: "Professional design-build team in Kansas City",
   },
   {
     title: "Fixed Pricing, No Surprises",
     description:
       "Complete scope and pricing before construction begins.",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=90",
+    image: "https://goldhearthomes.com/wp-content/uploads/2022/07/DSC_0005.jpg",
     alt: "Detailed planning and transparent pricing",
   },
   {
     title: "Respectful, Livable Remodeling",
     description:
       "Clean job sites and daily communication. You can stay in your home.",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=90",
+    image: "https://goldhearthomes.com/wp-content/uploads/2022/09/006_1600x1067_mls.jpg",
     alt: "Clean, organized remodeling workspace",
   },
   {
     title: "5-Year Warranty",
     description:
       "Comprehensive coverage on workmanship, materials, and installation.",
-    image: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&q=90",
+    image: "https://goldhearthomes.com/wp-content/uploads/2022/06/kitchen-remodeling-kansas-city.jpg",
     alt: "Quality craftsmanship and warranty protection",
   },
 ];
