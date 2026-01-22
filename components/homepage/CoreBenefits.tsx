@@ -5,7 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
-const coreServices = [
+// Primary Services - Image-led, featured
+const primaryServices = [
   {
     title: "Kitchen Remodeling",
     description: "Thoughtful layouts and premium materials that transform how you cook, gather, and live.",
@@ -32,12 +33,30 @@ const coreServices = [
   },
 ];
 
-const otherServices = [
-  { name: "Interiors", href: "/services/interiors" },
-  { name: "Exteriors", href: "/services/exteriors" },
+// Secondary Services - Prominent but visually quieter
+const secondaryServices = [
+  {
+    title: "Home Additions",
+    description: "Thoughtful expansion that integrates seamlessly with your existing home.",
+    href: "/services/additions",
+    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=90",
+    alt: "Home additions in Kansas City",
+  },
+  {
+    title: "Exterior Remodeling",
+    description: "Curb appeal and structural integrity with premium materials and craftsmanship.",
+    href: "/services/exteriors",
+    image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=90",
+    alt: "Exterior remodeling in Kansas City",
+  },
+];
+
+// Extended Capabilities - Links only
+const extendedCapabilities = [
+  { name: "Interior Renovations", href: "/services/interiors" },
   { name: "3D Rendering", href: "/services/3d-rendering" },
-  { name: "Additions", href: "/services/additions" },
-  { name: "Commercial", href: "/services/commercial" },
+  { name: "Outdoor Living / Pools", href: "/services/pools" },
+  { name: "Commercial Projects", href: "/services/commercial" },
 ];
 
 export default function CoreBenefits() {
@@ -70,10 +89,10 @@ export default function CoreBenefits() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
-            Core Services
+            Our Services
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Design-build remodeling for kitchens, bathrooms, and whole-home renovations in Kansas City.
+            Design-led remodeling for kitchens, bathrooms, whole-home renovations, additions, and exterior projects in Kansas City.
           </p>
         </div>
 
@@ -83,8 +102,8 @@ export default function CoreBenefits() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}
         >
-          {/* Featured Kitchen Service - Large and Dominant */}
-          {coreServices
+          {/* Primary Services - Kitchen Featured */}
+          {primaryServices
             .filter((s) => s.featured)
             .map((service, index) => (
               <Link
@@ -131,9 +150,9 @@ export default function CoreBenefits() {
               </Link>
             ))}
 
-          {/* Other Core Services - Grid Layout */}
+          {/* Other Primary Services - Grid Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-            {coreServices
+            {primaryServices
               .filter((s) => !s.featured)
               .map((service, index) => (
                 <Link
@@ -175,13 +194,48 @@ export default function CoreBenefits() {
               ))}
           </div>
 
-          {/* Other Services - Links Only */}
+          {/* Secondary Services - Prominent but Quieter */}
+          <div className="pt-12 border-t border-neutral-200">
+            <h3 className="text-xl font-serif font-semibold text-neutral-900 mb-6 text-center">
+              Additional Remodeling Services
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+              {secondaryServices.map((service, index) => (
+                <Link
+                  key={index}
+                  href={service.href}
+                  className="group block bg-white border border-neutral-200 rounded-[12px] overflow-hidden hover:shadow-md transition-all duration-300"
+                >
+                  <div className="relative h-[200px] bg-neutral-100">
+                    <Image
+                      src={service.image}
+                      alt={service.alt}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-lg font-serif font-semibold text-neutral-900 mb-2">
+                      {service.title}
+                    </h4>
+                    <p className="text-sm text-neutral-600 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Extended Capabilities - Links Only */}
           <div className="pt-8 border-t border-neutral-200">
             <p className="text-sm text-neutral-600 mb-4 text-center">
-              Additional services:
+              Extended capabilities:
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              {otherServices.map((service, index) => (
+              {extendedCapabilities.map((service, index) => (
                 <Link
                   key={index}
                   href={service.href}

@@ -3,6 +3,7 @@ import FeaturedWork from "@/components/homepage/FeaturedWork";
 import OutcomeChips from "@/components/homepage/OutcomeChips";
 import Process from "@/components/homepage/Process";
 import CoreBenefits from "@/components/homepage/CoreBenefits";
+import InteractiveExplorer from "@/components/homepage/InteractiveExplorer";
 import SocialProof from "@/components/homepage/SocialProof";
 import FlexSection from "@/components/homepage/FlexSection";
 import ServiceAreas from "@/components/homepage/ServiceAreas";
@@ -101,6 +102,7 @@ export default function HomePage() {
         <OutcomeChips />
         <Process />
         <CoreBenefits />
+        <InteractiveExplorer />
         <SocialProof />
         <FlexSection />
         <ServiceAreas />

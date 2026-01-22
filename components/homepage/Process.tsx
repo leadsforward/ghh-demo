@@ -56,10 +56,10 @@ export default function Process() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
-            Our Design-Build Process
+            Our Design-Led Process
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Three clear phases. One accountable team.
+            Upfront scope, collaborative design, and full accountability from start to finish.
           </p>
         </div>
 
