@@ -77,7 +77,7 @@ export default function FlexSection() {
           </h2>
           <p className="text-lg lg:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
             Clear communication, disciplined planning, and respect for your home
-            aren't extras — they're built into how we work.
+            aren&apos;t extras — they&apos;re built into how we work.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ export default function FlexSection() {
         <div className="mb-8 text-center">
           <p className="text-neutral-600 max-w-2xl mx-auto">
             Most remodeling frustrations come down to planning and communication.
-            Here's how our approach compares.
+            Here&apos;s how our approach compares.
           </p>
         </div>
 

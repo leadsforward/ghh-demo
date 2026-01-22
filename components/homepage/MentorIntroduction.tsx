@@ -62,7 +62,7 @@ export default function MentorIntroduction() {
             
             <div className="space-y-4 mb-8">
               <p className="text-lg text-neutral-700 leading-relaxed">
-                We're a design-build firm, which means one team handles your
+                We&apos;re a design-build firm, which means one team handles your
                 project from concept to completion. No handoffs, no confusion,
                 no surprises.
               </p>

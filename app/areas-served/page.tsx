@@ -112,7 +112,7 @@ export default function AreasServedPage() {
           <div className="mt-12 text-center">
             <p className="text-neutral-600 mb-4">
               Serving Kansas City, Overland Park, Prairie Village, Leawood,
-              Lee's Summit, Shawnee, Olathe, Lenexa, Liberty, and nearby
+              Lee&apos;s Summit, Shawnee, Olathe, Lenexa, Liberty, and nearby
               communities.
             </p>
             <Link

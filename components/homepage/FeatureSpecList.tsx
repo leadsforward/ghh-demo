@@ -50,7 +50,7 @@ export default function FeatureSpecList() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
-            What's included in every project.
+            What&apos;s included in every project.
           </h2>
           <p className="text-lg lg:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
             Clear expectations, thoughtful planning, and professional standards

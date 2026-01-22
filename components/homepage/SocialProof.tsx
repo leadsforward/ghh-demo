@@ -89,7 +89,7 @@ export default function SocialProof() {
               }}
             >
               <p className="text-neutral-700 mb-8 leading-relaxed italic">
-                "{testimonial.text}"
+                &quot;{testimonial.text}&quot;
               </p>
               <div className="border-t border-neutral-200 pt-6">
                 <div className="font-semibold text-neutral-900 mb-1">

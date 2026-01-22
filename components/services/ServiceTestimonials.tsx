@@ -83,7 +83,7 @@ export default function ServiceTestimonials({
                 ))}
               </div>
               <p className="text-neutral-700 mb-6 italic">
-                "{testimonial.text}"
+                &quot;{testimonial.text}&quot;
               </p>
               <div>
                 <div className="font-semibold text-neutral-900">

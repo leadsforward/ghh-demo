@@ -98,7 +98,7 @@ export default function FinancingPage() {
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
                     During your consultation, we discuss your project goals,
-                    budget, and timeline. We'll help you understand investment
+                    budget, and timeline. We&apos;ll help you understand investment
                     ranges and financing options that might work for you.
                   </p>
                 </div>

@@ -67,7 +67,7 @@ export default function ContactPage() {
                 Thank You
               </h1>
               <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                We've received your message and will respond within 24 hours.
+                We&apos;ve received your message and will respond within 24 hours.
                 We look forward to discussing your project.
               </p>
             </div>
@@ -83,11 +83,11 @@ export default function ContactPage() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 lg:mb-16">
             <h1 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900 mb-4">
-              Let's Talk About Your Home
+              Let&apos;s Talk About Your Home
             </h1>
             <p className="text-lg lg:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
-              A thoughtful conversation is the first step. We'll listen, answer
-              questions, and help you understand what's possible for your home.
+              A thoughtful conversation is the first step. We&apos;ll listen, answer
+              questions, and help you understand what&apos;s possible for your home.
             </p>
           </div>
 
@@ -140,9 +140,9 @@ export default function ContactPage() {
               </div>
               <div className="bg-neutral-50 rounded-lg p-6 border border-neutral-200">
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  Consultations are complimentary and pressure-free. We'll take
+                  Consultations are complimentary and pressure-free. We&apos;ll take
                   time to understand your goals, answer your questions, and
-                  discuss what's possible for your home.
+                  discuss what&apos;s possible for your home.
                 </p>
               </div>
             </div>

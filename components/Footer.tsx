@@ -144,7 +144,7 @@ export default function Footer() {
             <div>
               <h5 className="text-white font-semibold mb-2">Service Areas</h5>
               <p className="text-xs">
-                Kansas City, Independence, Lee's Summit, Overland Park, Shawnee,
+                Kansas City, Independence, Lee&apos;s Summit, Overland Park, Shawnee,
                 Olathe, Lenexa, Liberty
               </p>
             </div>

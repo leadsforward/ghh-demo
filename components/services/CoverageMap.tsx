@@ -39,7 +39,7 @@ export default function CoverageMap() {
             ))}
           </div>
           <p className="text-center text-neutral-600 mt-8">
-            Don't see your area?{" "}
+            Don&apos;t see your area?{" "}
             <a
               href="/contact"
               className="text-primary-600 hover:text-primary-700 font-semibold"

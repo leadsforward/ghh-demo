@@ -23,7 +23,7 @@ export default function Warranties() {
           </div>
           <p className="text-xl text-neutral-600 mb-8 max-w-3xl">
             We stand behind our work with a comprehensive 5-year warranty that
-            covers all aspects of your remodel. This isn't just a promise—it's
+            covers all aspects of your remodel. This isn&apos;t just a promise—it&apos;s
             a commitment to quality and your peace of mind.
           </p>
 
@@ -39,7 +39,7 @@ export default function Warranties() {
           <div className="bg-neutral-50 rounded-lg p-6 border border-neutral-200">
             <p className="text-neutral-700 leading-relaxed">
               <strong>Warranty Process:</strong> If any covered issue arises
-              during the warranty period, simply contact us. We'll schedule a
+              during the warranty period, simply contact us. We&apos;ll schedule a
               prompt inspection and make necessary repairs at no cost to you.
               No questions, no hassles—just quality service.
             </p>

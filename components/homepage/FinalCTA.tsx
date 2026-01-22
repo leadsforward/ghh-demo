@@ -10,8 +10,8 @@ export default function FinalCTA() {
             Ready to plan your remodel?
           </h2>
           <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-            A thoughtful conversation is the first step. We'll listen, answer
-            questions, and help you understand what's possible for your home.
+            A thoughtful conversation is the first step. We&apos;ll listen, answer
+            questions, and help you understand what&apos;s possible for your home.
           </p>
           <Link
             href="/contact"
