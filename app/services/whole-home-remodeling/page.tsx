@@ -14,7 +14,7 @@ const serviceData = {
   title: "Whole-Home Remodeling",
   description:
     "Transform your entire home with a cohesive, architect-led renovation. From structural changes to finish selections, we handle every detail of your whole-home remodel.",
-  heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+  heroImage: "https://goldhearthomes.com/wp-content/uploads/2022/06/modern-living-room-remodel-kansas-city.jpg",
   problems: [
     {
       title: "Disconnected Spaces",

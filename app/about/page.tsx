@@ -44,7 +44,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
             <div className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden bg-neutral-100">
               <Image
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+                src="https://goldhearthomes.com/wp-content/uploads/2022/07/DSC_0011.jpg"
                 alt="Gold Heart Homes team working on a project"
                 fill
                 className="object-cover"

@@ -9,21 +9,21 @@ const services = [
     description:
       "Thoughtful layouts and premium materials that transform how you cook, gather, and live.",
     href: "/services/kitchen-remodeling",
-    image: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&q=80",
+    image: "https://goldhearthomes.com/wp-content/uploads/2022/06/remodeled-kitchen-with-new-appliances-kansas-city.jpg",
   },
   {
     title: "Bathroom Remodeling",
     description:
       "Spaces designed for daily routines and long-term performance, with attention to every detail.",
     href: "/services/bathroom-remodeling",
-    image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&q=80",
+    image: "https://goldhearthomes.com/wp-content/uploads/2022/06/new-bath-remodeling-job-kansas-city.jpg",
   },
   {
     title: "Whole-Home Remodeling",
     description:
       "Cohesive design and disciplined execution across your entire home, from concept to completion.",
     href: "/services/whole-home-remodeling",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    image: "https://goldhearthomes.com/wp-content/uploads/2022/06/modern-living-room-remodel-kansas-city.jpg",
   },
 ];
 

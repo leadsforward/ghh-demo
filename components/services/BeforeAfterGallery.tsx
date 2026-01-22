@@ -11,33 +11,43 @@ interface BeforeAfterGalleryProps {
 const galleryImages = {
   kitchen: [
     {
-      before: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&q=80",
-      after: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&q=80",
+      before: "https://goldhearthomes.com/wp-content/uploads/2022/09/001_1600x1067_mls.jpg",
+      after: "https://goldhearthomes.com/wp-content/uploads/2022/06/remodeled-kitchen-with-new-appliances-kansas-city.jpg",
       caption: "Modern kitchen transformation with custom cabinetry and quartz countertops",
     },
     {
-      before: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&q=80",
-      after: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&q=80",
+      before: "https://goldhearthomes.com/wp-content/uploads/2022/09/002_1600x1067_mls.jpg",
+      after: "https://goldhearthomes.com/wp-content/uploads/2022/06/updated-kitchen-remodeling-kansas-city.jpg",
       caption: "Open-concept kitchen with island and premium appliances",
+    },
+    {
+      before: "https://goldhearthomes.com/wp-content/uploads/2022/09/003_1600x1067_mls.jpg",
+      after: "https://goldhearthomes.com/wp-content/uploads/2022/06/kitchen-remodeling-kansas-city.jpg",
+      caption: "Kitchen remodel featuring breakfast nook and updated finishes",
     },
   ],
   bathroom: [
     {
-      before: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&q=80",
-      after: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&q=80",
+      before: "https://goldhearthomes.com/wp-content/uploads/2022/09/004_1600x1067_mls.jpg",
+      after: "https://goldhearthomes.com/wp-content/uploads/2022/06/new-bath-remodeling-job-kansas-city.jpg",
       caption: "Spa-like master bathroom with walk-in shower and freestanding tub",
     },
     {
-      before: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&q=80",
-      after: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&q=80",
+      before: "https://goldhearthomes.com/wp-content/uploads/2022/09/005_1600x1067_mls.jpg",
+      after: "https://goldhearthomes.com/wp-content/uploads/2022/06/bathroom-rustic-wood-kansas-city.jpg",
       caption: "Modern bathroom with premium fixtures and custom tile work",
     },
   ],
   "whole-home": [
     {
-      before: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-      after: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+      before: "https://goldhearthomes.com/wp-content/uploads/2022/09/006_1600x1067_mls.jpg",
+      after: "https://goldhearthomes.com/wp-content/uploads/2022/06/modern-living-room-remodel-kansas-city.jpg",
       caption: "Complete home transformation with open-concept living",
+    },
+    {
+      before: "https://goldhearthomes.com/wp-content/uploads/2022/09/007_1600x1067_mls.jpg",
+      after: "https://goldhearthomes.com/wp-content/uploads/2022/06/kansas-city-family-room-remodel.jpg",
+      caption: "Whole-home remodel featuring updated family room and living spaces",
     },
   ],
 };

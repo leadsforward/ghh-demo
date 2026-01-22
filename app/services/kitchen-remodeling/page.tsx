@@ -14,7 +14,7 @@ const serviceData = {
   title: "Kitchen Remodeling",
   description:
     "Transform your kitchen into a functional, beautiful space that matches your lifestyle. Architect-led design, premium materials, and clean build process.",
-  heroImage: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=1200&q=80",
+  heroImage: "https://goldhearthomes.com/wp-content/uploads/2022/06/remodeled-kitchen-with-new-appliances-kansas-city.jpg",
   problems: [
     {
       title: "Outdated Layout",

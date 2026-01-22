@@ -14,7 +14,7 @@ const serviceData = {
   title: "Bathroom Remodeling",
   description:
     "Create a spa-like retreat in your home. Premium fixtures, thoughtful layouts, and waterproofing that lasts. Architect-led design for bathrooms that function beautifully.",
-  heroImage: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200&q=80",
+  heroImage: "https://goldhearthomes.com/wp-content/uploads/2022/06/new-bath-remodeling-job-kansas-city.jpg",
   problems: [
     {
       title: "Outdated Fixtures & Finishes",
