@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 
 const testimonials = [
@@ -10,18 +11,24 @@ const testimonials = [
     location: "Overland Park, KS",
     project: "Kitchen Remodel",
     text: "Gold Heart Homes transformed our 1980s kitchen into a modern, functional space. The design process was collaborative, the timeline was accurate, and the final result exceeded our expectations. No budget surprises, no delays.",
+    image: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&q=90",
+    alt: "Kitchen remodel project in Overland Park",
   },
   {
     name: "David Martinez",
     location: "Kansas City, MO",
     project: "Master Bathroom Remodel",
     text: "The team at Gold Heart Homes made all the difference. They helped us make decisions we wouldn't have thought of on our own. The build process was clean, organized, and respectful of our home. Worth every penny.",
+    image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=600&q=90",
+    alt: "Master bathroom remodel project in Kansas City",
   },
   {
     name: "Jennifer & Robert Thompson",
     location: "Leawood, KS",
     project: "Whole-Home Renovation",
     text: "We'd heard horror stories about remodeling, but Gold Heart Homes made it seamless. Competitive pricing, clear communication, and a team that treated our home like their own. Highly recommend!",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=90",
+    alt: "Whole-home renovation project in Leawood",
   },
 ];
 
@@ -83,20 +90,35 @@ export default function SocialProof() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white border border-neutral-200 p-8 lg:p-10 rounded-lg transition-all duration-300 hover:shadow-md lg:hover:shadow-lg"
+              className="group bg-white border border-neutral-200 rounded-[12px] overflow-hidden transition-all duration-300 hover:shadow-lg"
               style={{
                 transitionDelay: `${index * 100}ms`,
               }}
             >
-              <p className="text-neutral-700 mb-8 leading-relaxed italic">
-                &quot;{testimonial.text}&quot;
-              </p>
-              <div className="border-t border-neutral-200 pt-6">
-                <div className="font-semibold text-neutral-900 mb-1">
-                  {testimonial.name}
-                </div>
-                <div className="text-sm text-neutral-600">
-                  {testimonial.location} · {testimonial.project}
+              {/* Project Thumbnail */}
+              <div className="relative h-[200px] bg-neutral-100">
+                <Image
+                  src={testimonial.image}
+                  alt={testimonial.alt}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  loading="lazy"
+                />
+              </div>
+              
+              {/* Testimonial Content */}
+              <div className="p-8 lg:p-10">
+                <p className="text-neutral-700 mb-6 leading-relaxed italic">
+                  &quot;{testimonial.text}&quot;
+                </p>
+                <div className="border-t border-neutral-200 pt-6">
+                  <div className="font-semibold text-neutral-900 mb-1">
+                    {testimonial.name}
+                  </div>
+                  <div className="text-sm text-neutral-600">
+                    {testimonial.location} · {testimonial.project}
+                  </div>
                 </div>
               </div>
             </div>

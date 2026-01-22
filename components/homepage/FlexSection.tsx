@@ -91,21 +91,21 @@ export default function FlexSection() {
 
         <div
           ref={ref}
-          className={`bg-white border border-neutral-200 rounded-lg overflow-hidden transition-opacity duration-1000 ${
+          className={`bg-white border border-neutral-200 rounded-[12px] overflow-hidden shadow-sm transition-opacity duration-1000 ${
             isVisible ? "opacity-100" : "opacity-0"
           }`}
         >
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="bg-neutral-50 border-b border-neutral-200">
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-900">
+                <tr className="bg-neutral-50 border-b-2 border-neutral-200">
+                  <th className="px-6 py-5 text-left text-base font-semibold text-neutral-900">
                     What matters during a remodel
                   </th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-neutral-900">
+                  <th className="px-6 py-5 text-center text-base font-semibold text-primary-700 bg-primary-50/50">
                     Our Approach
                   </th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-neutral-900">
+                  <th className="px-6 py-5 text-center text-base font-semibold text-neutral-700">
                     Industry Norms
                   </th>
                 </tr>
@@ -114,19 +114,21 @@ export default function FlexSection() {
                 {comparisons.map((row, index) => (
                   <tr
                     key={index}
-                    className="border-b border-neutral-100 last:border-0 bg-white hover:bg-neutral-50/50 transition-colors"
+                    className="border-b border-neutral-100 last:border-0 bg-white hover:bg-neutral-50/30 transition-colors"
                   >
-                    <td className="px-6 py-5 text-neutral-700 font-medium">
+                    <td className="px-6 py-6 text-neutral-700 font-medium text-base">
                       {row.feature}
                     </td>
-                    <td className="px-6 py-5 text-center">
+                    <td className="px-6 py-6 text-center bg-primary-50/30">
                       {row.ourApproach ? (
-                        <Check className="w-5 h-5 text-primary-600 mx-auto" />
+                        <div className="flex items-center justify-center">
+                          <Check className="w-6 h-6 text-primary-600" />
+                        </div>
                       ) : (
                         <Minus className="w-5 h-5 text-neutral-300 mx-auto" />
                       )}
                     </td>
-                    <td className="px-6 py-5 text-center">
+                    <td className="px-6 py-6 text-center">
                       {row.industryNorms ? (
                         <div className="w-2 h-2 rounded-full bg-neutral-400 mx-auto"></div>
                       ) : (

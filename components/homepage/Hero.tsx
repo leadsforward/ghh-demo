@@ -96,48 +96,87 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Column: 3-Project Visual Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 lg:grid-rows-3 gap-4">
-            {projects.map((project, index) => (
-              <Link
-                key={project.id}
-                href={`/projects/${project.id}`}
-                className={`group relative h-[240px] sm:h-[200px] lg:h-[180px] rounded-[12px] overflow-hidden bg-neutral-100 cursor-pointer transition-opacity duration-700 ${
-                  isVisible ? "opacity-100" : "opacity-0"
-                }`}
-                style={{
-                  transitionDelay: `${index * 150}ms`,
-                }}
-              >
-                <Image
-                  src={project.image}
-                  alt={project.alt}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 25vw"
-                  loading={index === 0 ? "eager" : "lazy"}
-                />
-                
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300"></div>
-                
-                {/* Content overlay - visible on hover */}
-                <div className="absolute inset-0 flex flex-col justify-end p-5">
-                  <div className="transform translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    <p className="text-white text-sm font-medium mb-1">
-                      {project.location}
-                    </p>
-                    <p className="text-white/90 text-xs mb-3">
-                      {project.type}
-                    </p>
-                    <div className="flex items-center text-white text-xs font-semibold">
-                      View Project
-                      <ArrowRight className="ml-1 w-3 h-3" />
-                    </div>
+          {/* Right Column: Featured Kitchen + Project Grid */}
+          <div className="space-y-4">
+            {/* Featured Kitchen Image - Large and Prominent */}
+            <Link
+              href="/services/kitchen-remodeling"
+              className={`group relative block h-[400px] sm:h-[350px] lg:h-[420px] rounded-[16px] overflow-hidden bg-neutral-100 cursor-pointer transition-opacity duration-700 ${
+                isVisible ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <Image
+                src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=1200&q=90"
+                alt="Modern kitchen remodel in Kansas City - Gold Heart Homes"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                loading="eager"
+                priority
+              />
+              
+              {/* Subtle gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+              
+              {/* Content overlay - Kitchen Focus */}
+              <div className="absolute inset-0 flex flex-col justify-end p-6 lg:p-8">
+                <div className="transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                  <p className="text-white/90 text-sm font-medium mb-1">
+                    Featured Project
+                  </p>
+                  <p className="text-white text-xl lg:text-2xl font-serif font-semibold mb-2">
+                    Kitchen Remodeling
+                  </p>
+                  <p className="text-white/80 text-sm mb-4">
+                    Overland Park, KS
+                  </p>
+                  <div className="flex items-center text-white text-sm font-semibold">
+                    View Kitchen Projects
+                    <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </div>
-              </Link>
-            ))}
+              </div>
+            </Link>
+
+            {/* Secondary Project Grid */}
+            <div className="grid grid-cols-2 gap-4">
+              {projects.slice(1).map((project, index) => (
+                <Link
+                  key={project.id}
+                  href={`/projects/${project.id}`}
+                  className={`group relative h-[180px] sm:h-[160px] rounded-[12px] overflow-hidden bg-neutral-100 cursor-pointer transition-opacity duration-700 ${
+                    isVisible ? "opacity-100" : "opacity-0"
+                  }`}
+                  style={{
+                    transitionDelay: `${(index + 1) * 150}ms`,
+                  }}
+                >
+                  <Image
+                    src={project.image}
+                    alt={project.alt}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                    loading="lazy"
+                  />
+                  
+                  {/* Overlay on hover */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300"></div>
+                  
+                  {/* Content overlay - visible on hover */}
+                  <div className="absolute inset-0 flex flex-col justify-end p-4">
+                    <div className="transform translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                      <p className="text-white text-xs font-medium mb-1">
+                        {project.location}
+                      </p>
+                      <p className="text-white/90 text-xs">
+                        {project.type}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>
