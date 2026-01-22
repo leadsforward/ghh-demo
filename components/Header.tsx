@@ -20,11 +20,9 @@ const secondaryNavigation = [
 ];
 
 const services = [
-  { name: "Interiors", href: "/services/interiors" },
-  { name: "Exteriors", href: "/services/exteriors" },
-  { name: "3D Rendering", href: "/services/3d-rendering" },
-  { name: "Additions", href: "/services/additions" },
-  { name: "Commercial", href: "/services/commercial" },
+  { name: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
+  { name: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
+  { name: "Whole-Home Remodeling", href: "/services/whole-home-remodeling" },
 ];
 
 export default function Header() {
@@ -66,7 +64,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
           prefersReducedMotion ? "transition-none" : ""
         } ${
           isScrolled
@@ -121,7 +119,9 @@ export default function Header() {
                 >
                   <Link
                     href={item.href}
-                    className="px-4 py-2 text-neutral-700 hover:text-neutral-900 font-medium text-sm transition-colors rounded-md hover:bg-neutral-50 relative group"
+                    className={`px-4 py-2 text-neutral-700 hover:text-neutral-900 font-medium text-sm transition-colors rounded-md hover:bg-neutral-50 relative group ${
+                      item.name === "Services" ? "font-semibold" : ""
+                    }`}
                   >
                     {item.name}
                     {item.hasDropdown && (
@@ -129,7 +129,7 @@ export default function Header() {
                     )}
                   </Link>
                   {item.hasDropdown && isServicesOpen && (
-                    <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-neutral-200 py-2 animate-fade-in">
+                    <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-neutral-200 py-2 animate-fade-in z-50">
                       {services.map((service) => (
                         <Link
                           key={service.name}
@@ -149,7 +149,7 @@ export default function Header() {
             <div className="hidden lg:flex items-center space-x-4">
               <a
                 href={`tel:${phoneNumber.replace(/\s/g, "")}`}
-                className="flex items-center text-neutral-700 hover:text-primary-700 font-medium text-sm transition-colors px-3 py-2 rounded-md hover:bg-neutral-50 whitespace-nowrap"
+                className="flex items-center text-neutral-700 hover:text-primary-700 font-semibold text-sm transition-colors px-3 py-2 rounded-md hover:bg-neutral-50 whitespace-nowrap"
                 aria-label="Call us"
               >
                 <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
@@ -191,17 +191,17 @@ export default function Header() {
 
               <Link
                 href="/contact"
-                className="bg-primary-600 text-white px-6 py-2.5 rounded-md font-semibold text-sm hover:bg-primary-700 transition-colors whitespace-nowrap min-h-[44px] flex items-center"
+                className="bg-primary-600 text-white px-6 py-2.5 rounded-md font-semibold text-sm hover:bg-primary-700 transition-colors whitespace-nowrap min-h-[44px] flex items-center shadow-sm hover:shadow-md"
               >
-                Schedule a Design Consultation
+                Schedule Consultation
               </Link>
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="lg:hidden flex items-center space-x-3">
+            <div className="lg:hidden flex items-center space-x-2">
               <a
                 href={`tel:${phoneNumber.replace(/\s/g, "")}`}
-                className="text-primary-600 font-semibold text-sm whitespace-nowrap"
+                className="text-primary-600 font-semibold text-sm whitespace-nowrap px-2 py-1"
                 aria-label="Call us"
               >
                 {phoneNumber}
@@ -226,12 +226,26 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="lg:hidden fixed inset-0 top-20 bg-white z-40 overflow-y-auto">
             <div className="px-4 py-6 space-y-1">
+              {/* Mobile CTA - Immediately Visible */}
+              <Link
+                href="/contact"
+                className="block w-full bg-primary-600 text-white px-6 py-4 rounded-lg font-semibold text-center mb-6 hover:bg-primary-700 transition-all active:scale-95 shadow-lg min-h-[44px] flex items-center justify-center"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Schedule Consultation
+              </Link>
+
+              {/* Divider */}
+              <div className="border-t border-neutral-200 mb-4"></div>
+
               {/* Primary Navigation */}
               {primaryNavigation.map((item) => (
                 <div key={item.name}>
                   <Link
                     href={item.href}
-                    className="block px-4 py-3 text-neutral-900 font-medium rounded-lg hover:bg-neutral-50 transition-colors"
+                    className={`block px-4 py-3 text-neutral-900 font-medium rounded-lg hover:bg-neutral-50 transition-colors ${
+                      item.name === "Services" ? "font-semibold" : ""
+                    }`}
                     onClick={() => {
                       if (!item.hasDropdown) setIsMobileMenuOpen(false);
                     }}
@@ -269,15 +283,6 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-
-              {/* Mobile CTA */}
-              <Link
-                href="/contact"
-                className="block w-full bg-primary-600 text-white px-6 py-4 rounded-lg font-semibold text-center mt-6 hover:bg-primary-700 transition-all active:scale-95 shadow-lg min-h-[44px] flex items-center justify-center"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Schedule Consultation
-              </Link>
             </div>
           </div>
         )}

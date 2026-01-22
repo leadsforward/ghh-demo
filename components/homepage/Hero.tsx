@@ -42,24 +42,29 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column: Copy + CTAs */}
           <div className="text-center lg:text-left">
+            {/* Eyebrow - Clarity Layer */}
+            <p className="text-sm font-semibold text-primary-600 mb-3 uppercase tracking-wide">
+              Kansas City Design-Build Remodeling
+            </p>
+
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 text-balance leading-tight">
               Homes designed to live beautifully.
             </h1>
 
-            {/* Subhead */}
+            {/* Subhead - Slightly more specific while preserving keywords */}
             <p className="text-lg text-neutral-600 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Gold Heart Homes is a Kansas City design-build firm specializing
-              in kitchens, bathrooms, and whole-home remodels with one team
-              guiding every detail.
+              One team guides your kitchen, bathroom, or whole-home remodel from
+              concept to completion. Kansas City&apos;s design-build approach
+              with clear communication and thoughtful planning.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center sm:items-stretch mb-6">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center sm:items-stretch">
               {/* Primary CTA */}
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-primary-600 text-white px-8 py-4 rounded-md font-semibold text-base hover:bg-primary-700 transition-colors whitespace-nowrap min-h-[44px]"
+                className="inline-flex items-center justify-center bg-primary-600 text-white px-8 py-4 rounded-md font-semibold text-base hover:bg-primary-700 transition-colors whitespace-nowrap min-h-[44px] shadow-sm hover:shadow-md"
               >
                 Schedule a Design Consultation
                 <ArrowRight className="ml-2 w-5 h-5 flex-shrink-0" />
@@ -74,12 +79,20 @@ export default function Hero() {
               </Link>
             </div>
 
-            {/* Trust Line - Understated Social Proof */}
-            <div className="flex items-center justify-center lg:justify-start gap-1.5 text-sm text-neutral-500">
-              <span className="text-neutral-600">★★★★★</span>
-              <span>4.9 Google rating</span>
-              <span className="text-neutral-400">·</span>
-              <span>500+ Kansas City projects completed</span>
+            {/* Trust Line - Authority Reinforcement */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-3 gap-y-1 text-sm text-neutral-600 mt-8">
+              <div className="flex items-center gap-1.5">
+                <span className="text-yellow-500">★★★★★</span>
+                <span className="font-medium">4.9</span>
+                <span className="text-neutral-500">Google</span>
+              </div>
+              <span className="text-neutral-300">·</span>
+              <div className="flex items-center gap-1.5">
+                <span className="font-medium">500+</span>
+                <span className="text-neutral-500">projects</span>
+              </div>
+              <span className="text-neutral-300">·</span>
+              <span className="text-neutral-500">Kansas City, MO</span>
             </div>
           </div>
 
