@@ -85,7 +85,7 @@ export default function CoreBenefits() {
   }, []);
 
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-white py-20 lg:py-32">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
@@ -102,14 +102,14 @@ export default function CoreBenefits() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}
         >
-          {/* Primary Services - Kitchen Featured */}
+          {/* Primary Services - Kitchen Featured (Dominant) */}
           {primaryServices
             .filter((s) => s.featured)
             .map((service, index) => (
               <Link
                 key={index}
                 href={service.href}
-                className={`group block bg-white border-2 border-primary-100 rounded-[16px] overflow-hidden hover:border-primary-200 hover:shadow-xl transition-all duration-300 ${
+                className={`group block bg-white border-2 border-primary-200 rounded-[20px] overflow-hidden hover:border-primary-300 hover:shadow-2xl transition-all duration-500 ${
                   isVisible ? "opacity-100" : "opacity-0"
                 }`}
                 style={{
@@ -117,33 +117,37 @@ export default function CoreBenefits() {
                 }}
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                  {/* Large Kitchen Image */}
-                  <div className="relative h-[400px] lg:h-[500px] bg-neutral-100">
+                  {/* Large Kitchen Image - Dominant Visual */}
+                  <div className="relative h-[450px] lg:h-[600px] bg-neutral-100 overflow-hidden">
                     <Image
                       src={service.image}
                       alt={service.alt}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                      className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       loading="eager"
                       priority
                     />
-                    <div className="absolute top-6 left-6 bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                    {/* Subtle overlay on hover */}
+                    <div className="absolute inset-0 bg-primary-600/0 group-hover:bg-primary-600/5 transition-colors duration-500"></div>
+                    <div className="absolute top-8 left-8 bg-primary-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg">
                       Featured Service
                     </div>
                   </div>
                   
                   {/* Content */}
-                  <div className="p-8 lg:p-12 flex flex-col justify-center">
-                    <h3 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
+                  <div className="p-10 lg:p-16 flex flex-col justify-center bg-gradient-to-br from-white to-neutral-50">
+                    <h3 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
                       {service.title}
                     </h3>
-                    <p className="text-lg text-neutral-700 leading-relaxed mb-6">
+                    <p className="text-xl text-neutral-700 leading-relaxed mb-8">
                       {service.description}
                     </p>
-                    <div className="inline-flex items-center text-primary-600 font-semibold group-hover:text-primary-700 transition-colors">
-                      View Kitchen Projects
-                      <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    <div className="inline-flex items-center text-primary-600 font-semibold group-hover:text-primary-700 transition-all">
+                      <span className="border-b-2 border-primary-600 group-hover:border-primary-700 transition-colors">
+                        View Kitchen Projects
+                      </span>
+                      <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
                     </div>
                   </div>
                 </div>
@@ -151,43 +155,46 @@ export default function CoreBenefits() {
             ))}
 
           {/* Other Primary Services - Grid Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {primaryServices
               .filter((s) => !s.featured)
               .map((service, index) => (
                 <Link
                   key={index}
                   href={service.href}
-                  className={`group block bg-white border border-neutral-200 rounded-[12px] overflow-hidden hover:shadow-lg transition-all duration-300 ${
+                  className={`group block bg-white border border-neutral-200 rounded-[16px] overflow-hidden hover:shadow-xl hover:border-primary-200 transition-all duration-500 ${
                     isVisible ? "opacity-100" : "opacity-0"
                   }`}
                   style={{
                     transitionDelay: `${(index + 1) * 100}ms`,
                   }}
                 >
-                  {/* Service Image */}
-                  <div className="relative h-[280px] bg-neutral-100">
+                  {/* Service Image with overlay */}
+                  <div className="relative h-[320px] bg-neutral-100 overflow-hidden">
                     <Image
                       src={service.image}
                       alt={service.alt}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
+                      className="object-cover transition-transform duration-700 group-hover:scale-[1.08]"
                       sizes="(max-width: 768px) 100vw, 50vw"
                       loading="lazy"
                     />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
                   </div>
                   
                   {/* Content */}
                   <div className="p-8 lg:p-10">
-                    <h3 className="text-xl lg:text-2xl font-serif font-semibold text-neutral-900 mb-4">
+                    <h3 className="text-2xl lg:text-3xl font-serif font-semibold text-neutral-900 mb-4">
                       {service.title}
                     </h3>
                     <p className="text-neutral-600 leading-relaxed mb-6">
                       {service.description}
                     </p>
-                    <div className="inline-flex items-center text-primary-600 font-semibold group-hover:text-primary-700 transition-colors">
-                      Learn More
-                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    <div className="inline-flex items-center text-primary-600 font-semibold group-hover:text-primary-700 transition-all">
+                      <span className="border-b border-primary-600 group-hover:border-primary-700 transition-colors">
+                        Learn More
+                      </span>
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                     </div>
                   </div>
                 </Link>

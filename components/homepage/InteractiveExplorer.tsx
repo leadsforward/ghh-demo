@@ -73,14 +73,14 @@ export default function InteractiveExplorer() {
   }, []);
 
   return (
-    <section className="bg-neutral-50 py-16 lg:py-24">
+    <section className="bg-white py-20 lg:py-32">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
             Explore Kitchen Design Elements
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Hover over different areas to learn about our design approach and material selections.
+            Discover our approach to materials, finishes, and thoughtful design details that make each kitchen unique.
           </p>
         </div>
 
@@ -107,7 +107,11 @@ export default function InteractiveExplorer() {
                 {/* Cabinets Zone */}
                 <div
                   data-zone="cabinets"
-                  className="col-span-2 row-span-2 bg-primary-600/0 hover:bg-primary-600/10 transition-colors rounded cursor-pointer border-2 border-transparent hover:border-primary-600/50"
+                  className={`col-span-2 row-span-2 rounded-lg cursor-pointer transition-all duration-300 ${
+                    hoveredZone === "cabinets"
+                      ? "bg-primary-600/15 border-2 border-primary-600/60 shadow-lg shadow-primary-600/20"
+                      : "bg-primary-600/0 border-2 border-transparent hover:bg-primary-600/8 hover:border-primary-600/30"
+                  }`}
                   onMouseEnter={() => setHoveredZone("cabinets")}
                   onMouseLeave={() => setHoveredZone(null)}
                 ></div>
@@ -115,7 +119,11 @@ export default function InteractiveExplorer() {
                 {/* Countertops Zone */}
                 <div
                   data-zone="countertops"
-                  className="col-span-3 row-span-1 bg-primary-600/0 hover:bg-primary-600/10 transition-colors rounded cursor-pointer border-2 border-transparent hover:border-primary-600/50"
+                  className={`col-span-3 row-span-1 rounded-lg cursor-pointer transition-all duration-300 ${
+                    hoveredZone === "countertops"
+                      ? "bg-primary-600/15 border-2 border-primary-600/60 shadow-lg shadow-primary-600/20"
+                      : "bg-primary-600/0 border-2 border-transparent hover:bg-primary-600/8 hover:border-primary-600/30"
+                  }`}
                   onMouseEnter={() => setHoveredZone("countertops")}
                   onMouseLeave={() => setHoveredZone(null)}
                 ></div>
@@ -123,7 +131,11 @@ export default function InteractiveExplorer() {
                 {/* Backsplash Zone */}
                 <div
                   data-zone="backsplash"
-                  className="col-span-3 row-span-1 bg-primary-600/0 hover:bg-primary-600/10 transition-colors rounded cursor-pointer border-2 border-transparent hover:border-primary-600/50"
+                  className={`col-span-3 row-span-1 rounded-lg cursor-pointer transition-all duration-300 ${
+                    hoveredZone === "backsplash"
+                      ? "bg-primary-600/15 border-2 border-primary-600/60 shadow-lg shadow-primary-600/20"
+                      : "bg-primary-600/0 border-2 border-transparent hover:bg-primary-600/8 hover:border-primary-600/30"
+                  }`}
                   onMouseEnter={() => setHoveredZone("backsplash")}
                   onMouseLeave={() => setHoveredZone(null)}
                 ></div>
@@ -131,7 +143,11 @@ export default function InteractiveExplorer() {
                 {/* Flooring Zone */}
                 <div
                   data-zone="flooring"
-                  className="col-span-5 row-span-1 bg-primary-600/0 hover:bg-primary-600/10 transition-colors rounded cursor-pointer border-2 border-transparent hover:border-primary-600/50"
+                  className={`col-span-5 row-span-1 rounded-lg cursor-pointer transition-all duration-300 ${
+                    hoveredZone === "flooring"
+                      ? "bg-primary-600/15 border-2 border-primary-600/60 shadow-lg shadow-primary-600/20"
+                      : "bg-primary-600/0 border-2 border-transparent hover:bg-primary-600/8 hover:border-primary-600/30"
+                  }`}
                   onMouseEnter={() => setHoveredZone("flooring")}
                   onMouseLeave={() => setHoveredZone(null)}
                 ></div>
@@ -139,7 +155,11 @@ export default function InteractiveExplorer() {
                 {/* Fixtures Zone */}
                 <div
                   data-zone="fixtures"
-                  className="col-span-2 row-span-1 bg-primary-600/0 hover:bg-primary-600/10 transition-colors rounded cursor-pointer border-2 border-transparent hover:border-primary-600/50"
+                  className={`col-span-2 row-span-1 rounded-lg cursor-pointer transition-all duration-300 ${
+                    hoveredZone === "fixtures"
+                      ? "bg-primary-600/15 border-2 border-primary-600/60 shadow-lg shadow-primary-600/20"
+                      : "bg-primary-600/0 border-2 border-transparent hover:bg-primary-600/8 hover:border-primary-600/30"
+                  }`}
                   onMouseEnter={() => setHoveredZone("fixtures")}
                   onMouseLeave={() => setHoveredZone(null)}
                 ></div>
@@ -147,15 +167,15 @@ export default function InteractiveExplorer() {
 
               {/* Zone Info Overlay - Appears on hover */}
               {hoveredZone && (
-                <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-lg border border-neutral-200 animate-fade-in">
+                <div className="absolute bottom-8 left-8 right-8 bg-white/98 backdrop-blur-md rounded-xl p-6 shadow-2xl border border-neutral-200/50 animate-fade-in max-w-md">
                   {kitchenZones
                     .filter((z) => z.id === hoveredZone)
                     .map((zone) => (
                       <div key={zone.id}>
-                        <h3 className="font-serif font-semibold text-neutral-900 mb-1">
+                        <h3 className="font-serif font-semibold text-lg text-neutral-900 mb-2">
                           {zone.name}
                         </h3>
-                        <p className="text-sm text-neutral-600">
+                        <p className="text-sm text-neutral-600 leading-relaxed">
                           {zone.description}
                         </p>
                       </div>
@@ -186,10 +206,6 @@ export default function InteractiveExplorer() {
             </div>
           </div>
 
-          {/* Future Enhancement Note (Hidden in production, visible for development) */}
-          <p className="text-xs text-neutral-400 text-center mt-4">
-            Interactive explorer scaffolded for future enhancement. Data attributes and structure ready for advanced interactions.
-          </p>
         </div>
       </div>
 

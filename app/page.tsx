@@ -96,19 +96,17 @@ export default function HomePage() {
     <>
       <StructuredData data={faqSchema} />
       <StructuredData data={localBusinessSchema} />
-      <div className="pt-20">
-        <Hero />
-        <FeaturedWork />
-        <OutcomeChips />
-        <Process />
-        <CoreBenefits />
-        <InteractiveExplorer />
-        <SocialProof />
-        <FlexSection />
-        <ServiceAreas />
-        <FAQ />
-        <FinalCTA />
-      </div>
+      <Hero />
+      <FeaturedWork />
+      <OutcomeChips />
+      <Process />
+      <CoreBenefits />
+      <InteractiveExplorer />
+      <SocialProof />
+      <FlexSection />
+      <ServiceAreas />
+      <FAQ />
+      <FinalCTA />
     </>
   );
 }
