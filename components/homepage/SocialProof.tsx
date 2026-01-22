@@ -61,24 +61,17 @@ export default function SocialProof() {
     <section className="bg-white py-16 lg:py-24">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-3">
-            Trusted by homeowners across Kansas City.
+          <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
+            Trusted by Kansas City Homeowners
           </h2>
-          <div className="flex items-center justify-center gap-1 mb-4">
-            <span className="text-neutral-600 text-sm">★★★★★</span>
-            <span className="text-neutral-500 text-sm">4.9 rating</span>
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <span className="text-yellow-500 text-lg">★★★★★</span>
+            <span className="text-neutral-700 font-semibold">4.9</span>
+            <span className="text-neutral-500">Google rating</span>
+            <span className="text-neutral-300">·</span>
+            <span className="text-neutral-700 font-semibold">127+</span>
+            <span className="text-neutral-500">reviews</span>
           </div>
-          <p className="text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-4">
-            Home remodeling is personal. These are a few words from homeowners
-            who trusted us with their homes — and their peace of mind.
-          </p>
-          <Link
-            href="/reviews"
-            className="inline-flex items-center text-sm text-neutral-500 hover:text-primary-600 transition-colors"
-          >
-            See more reviews
-            <ExternalLink className="ml-1 w-3 h-3" />
-          </Link>
         </div>
 
         <div

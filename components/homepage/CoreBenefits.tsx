@@ -5,37 +5,39 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
-const services = [
+const coreServices = [
   {
     title: "Kitchen Remodeling",
-    description:
-      "Thoughtful layouts and premium materials that transform how you cook, gather, and live.",
+    description: "Thoughtful layouts and premium materials that transform how you cook, gather, and live.",
     href: "/services/kitchen-remodeling",
-    cta: "View Kitchen Projects",
     image: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=1200&q=90",
-    alt: "Modern kitchen remodel in Kansas City",
+    alt: "Kitchen remodeling in Kansas City",
     featured: true,
   },
   {
     title: "Bathroom Remodeling",
-    description:
-      "Spaces designed for daily routines and long-term performance, with attention to every detail.",
+    description: "Spaces designed for daily routines and long-term performance.",
     href: "/services/bathroom-remodeling",
-    cta: "View Bathroom Projects",
     image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200&q=90",
-    alt: "Luxury bathroom remodel in Kansas City",
+    alt: "Bathroom remodeling in Kansas City",
     featured: false,
   },
   {
     title: "Whole-Home Remodeling",
-    description:
-      "Cohesive design and disciplined execution across your entire home, from concept to completion.",
+    description: "Cohesive design and disciplined execution across your entire home.",
     href: "/services/whole-home-remodeling",
-    cta: "View Whole-Home Projects",
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=90",
-    alt: "Whole-home renovation in Kansas City",
+    alt: "Whole-home remodeling in Kansas City",
     featured: false,
   },
+];
+
+const otherServices = [
+  { name: "Interiors", href: "/services/interiors" },
+  { name: "Exteriors", href: "/services/exteriors" },
+  { name: "3D Rendering", href: "/services/3d-rendering" },
+  { name: "Additions", href: "/services/additions" },
+  { name: "Commercial", href: "/services/commercial" },
 ];
 
 export default function CoreBenefits() {
@@ -68,11 +70,10 @@ export default function CoreBenefits() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
-            Our core remodeling services.
+            Core Services
           </h2>
-          <p className="text-lg lg:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
-            Focused expertise in the areas where thoughtful design and disciplined
-            building matter most.
+          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+            Design-build remodeling for kitchens, bathrooms, and whole-home renovations in Kansas City.
           </p>
         </div>
 
@@ -83,7 +84,7 @@ export default function CoreBenefits() {
           }`}
         >
           {/* Featured Kitchen Service - Large and Dominant */}
-          {services
+          {coreServices
             .filter((s) => s.featured)
             .map((service, index) => (
               <Link
@@ -122,7 +123,7 @@ export default function CoreBenefits() {
                       {service.description}
                     </p>
                     <div className="inline-flex items-center text-primary-600 font-semibold group-hover:text-primary-700 transition-colors">
-                      {service.cta}
+                      View Kitchen Projects
                       <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
@@ -130,9 +131,9 @@ export default function CoreBenefits() {
               </Link>
             ))}
 
-          {/* Other Services - Grid Layout */}
+          {/* Other Core Services - Grid Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-            {services
+            {coreServices
               .filter((s) => !s.featured)
               .map((service, index) => (
                 <Link
@@ -166,12 +167,30 @@ export default function CoreBenefits() {
                       {service.description}
                     </p>
                     <div className="inline-flex items-center text-primary-600 font-semibold group-hover:text-primary-700 transition-colors">
-                      {service.cta}
+                      Learn More
                       <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </Link>
               ))}
+          </div>
+
+          {/* Other Services - Links Only */}
+          <div className="pt-8 border-t border-neutral-200">
+            <p className="text-sm text-neutral-600 mb-4 text-center">
+              Additional services:
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              {otherServices.map((service, index) => (
+                <Link
+                  key={index}
+                  href={service.href}
+                  className="text-primary-600 hover:text-primary-700 font-medium text-sm transition-colors"
+                >
+                  {service.name}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>

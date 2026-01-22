@@ -73,19 +73,10 @@ export default function FlexSection() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
-            A more thoughtful approach to remodeling.
+            Our Standards
           </h2>
-          <p className="text-lg lg:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
-            Clear communication, disciplined planning, and respect for your home
-            aren&apos;t extras — they&apos;re built into how we work.
-          </p>
-        </div>
-
-        {/* Optional Intro Text */}
-        <div className="mb-8 text-center">
-          <p className="text-neutral-600 max-w-2xl mx-auto">
-            Most remodeling frustrations come down to planning and communication.
-            Here&apos;s how our approach compares.
+          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+            What sets design-build remodeling apart from traditional contracting.
           </p>
         </div>
 

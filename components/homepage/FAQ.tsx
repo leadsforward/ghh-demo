@@ -7,39 +7,24 @@ import { ArrowRight } from "lucide-react";
 
 const faqs = [
   {
-    question: "What's the difference between remodeling and renovating?",
+    question: "Will I get surprise costs or budget overruns?",
     answer:
-      "Remodeling involves changing the structure, layout, or function of a space. Renovating typically means restoring or updating existing features. At Gold Heart Homes, we specialize in remodeling — transforming spaces to better fit how you live.",
+      "No. We provide fixed pricing after the design phase. All materials, labor, and permits are included in your contract before construction begins.",
   },
   {
-    question: "How much does a home remodel typically cost?",
+    question: "How long will I be without a kitchen/bathroom?",
     answer:
-      "Investment varies significantly based on scope, materials, and structural requirements. Most kitchen remodels range from $45,000 to $120,000+, while bathroom remodels typically range from $25,000 to $75,000+. We provide detailed estimates during the consultation phase, so you understand investment parameters before design work begins.",
+      "Most kitchen remodels take 8–12 weeks. Bathroom remodels take 6–10 weeks. We use dust containment and daily cleanup so you can stay in your home.",
   },
   {
-    question: "Do you handle design, permits, and project management?",
+    question: "What if something goes wrong after completion?",
     answer:
-      "Yes. As a design-build firm, we handle everything from initial design through final completion. This includes design development, permit applications, material procurement, and day-to-day project management. One team, one point of contact, from start to finish.",
+      "Our 5-year warranty covers all workmanship, materials, and installation. If any covered issue arises, we&apos;ll fix it at no cost to you.",
   },
   {
-    question: "How long does a typical remodel take?",
+    question: "Do you handle everything, or do I need to coordinate multiple contractors?",
     answer:
-      "Timelines depend on project scope. Most kitchen remodels take 8–12 weeks, bathroom remodels take 6–10 weeks, and whole-home remodels take 12–24 weeks. We provide detailed timelines during the planning phase and keep you informed throughout the project.",
-  },
-  {
-    question: "What areas do you serve?",
-    answer:
-      "We serve Kansas City, MO, and surrounding communities including Jackson County, Clay County, Platte County, Cass County, Johnson County, and Wyandotte County. This includes cities like Overland Park, Leawood, Prairie Village, Lee's Summit, Shawnee, Olathe, and Lenexa.",
-  },
-  {
-    question: "Do you offer financing options?",
-    answer:
-      "Yes. We work with trusted lenders to offer flexible financing solutions that fit your budget and timeline. Options include home equity loans, home improvement loans, and milestone-based payment plans. We can discuss financing during your consultation.",
-  },
-  {
-    question: "What should I expect during the process?",
-    answer:
-      "You'll work with a dedicated design-build team from consultation through completion. We handle planning, permits, and project management. You'll have regular communication, clear timelines, and a clean, organized job site. Our goal is to make the process predictable and straightforward.",
+      "We handle everything. As a design-build firm, one team manages design, permits, construction, and project management from start to finish.",
   },
 ];
 
@@ -76,13 +61,10 @@ export default function FAQ() {
   return (
     <section className="bg-white py-16 lg:py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 lg:mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
-            Common questions, clearly answered.
+            Frequently Asked Questions
           </h2>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Clear, honest answers to help you feel confident moving forward.
-          </p>
         </div>
 
         <div

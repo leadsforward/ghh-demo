@@ -1,12 +1,10 @@
 import Hero from "@/components/homepage/Hero";
+import FeaturedWork from "@/components/homepage/FeaturedWork";
 import OutcomeChips from "@/components/homepage/OutcomeChips";
-import ProblemAgitation from "@/components/homepage/ProblemAgitation";
-import MentorIntroduction from "@/components/homepage/MentorIntroduction";
+import Process from "@/components/homepage/Process";
 import CoreBenefits from "@/components/homepage/CoreBenefits";
 import SocialProof from "@/components/homepage/SocialProof";
-import Process from "@/components/homepage/Process";
 import FlexSection from "@/components/homepage/FlexSection";
-import FeatureSpecList from "@/components/homepage/FeatureSpecList";
 import ServiceAreas from "@/components/homepage/ServiceAreas";
 import FAQ from "@/components/homepage/FAQ";
 import FinalCTA from "@/components/homepage/FinalCTA";
@@ -18,50 +16,34 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "How long does a typical kitchen remodel take?",
+      name: "Will I get surprise costs or budget overruns?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most kitchen remodels take 8-12 weeks from start to finish, depending on scope and complexity. We provide a detailed timeline during the design phase, and we're committed to meeting those deadlines.",
+        text: "No. We provide fixed pricing after the design phase. All materials, labor, and permits are included in your contract before construction begins.",
       },
     },
     {
       "@type": "Question",
-      name: "Do you provide fixed pricing?",
+      name: "How long will I be without a kitchen/bathroom?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. After the design and scope phase, we provide a fixed-price contract with no surprise costs. All materials, labor, and permits are included in the estimate before construction begins.",
+        text: "Most kitchen remodels take 8-12 weeks. Bathroom remodels take 6-10 weeks. We use dust containment and daily cleanup so you can stay in your home.",
       },
     },
     {
       "@type": "Question",
-      name: "What's included in your warranty?",
+      name: "What if something goes wrong after completion?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Our comprehensive 5-year warranty covers all workmanship, materials, and installation. This includes structural elements, finishes, fixtures, and appliances installed by our team.",
+        text: "Our 5-year warranty covers all workmanship, materials, and installation. If any covered issue arises, we'll fix it at no cost to you.",
       },
     },
     {
       "@type": "Question",
-      name: "Do I need to move out during the remodel?",
+      name: "Do you handle everything, or do I need to coordinate multiple contractors?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "For most projects, you can stay in your home. We use dust containment systems and daily cleanup to minimize disruption. For whole-home renovations, we can discuss temporary living arrangements if needed.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do you handle design decisions?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Our architect-led approach means you get professional design guidance throughout the process. We help you make informed decisions about materials, layouts, and finishes that align with your vision and budget.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What areas do you serve?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We serve Kansas City, MO, and surrounding suburbs including Overland Park, Leawood, Prairie Village, and more. Contact us to confirm service in your area.",
+        text: "We handle everything. As a design-build firm, one team manages design, permits, construction, and project management from start to finish.",
       },
     },
   ],
@@ -115,14 +97,12 @@ export default function HomePage() {
       <StructuredData data={localBusinessSchema} />
       <div className="pt-20">
         <Hero />
+        <FeaturedWork />
         <OutcomeChips />
-        <ProblemAgitation />
-        <MentorIntroduction />
+        <Process />
         <CoreBenefits />
         <SocialProof />
-        <Process />
         <FlexSection />
-        <FeatureSpecList />
         <ServiceAreas />
         <FAQ />
         <FinalCTA />

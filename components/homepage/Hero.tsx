@@ -47,16 +47,14 @@ export default function Hero() {
               Kansas City Design-Build Remodeling
             </p>
 
-            {/* Headline */}
+            {/* Headline - Outcome-Driven */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 text-balance leading-tight">
-              Homes designed to live beautifully.
+              Design-build remodeling in Kansas City that delivers on time, on budget, and on vision.
             </h1>
 
-            {/* Subhead - Slightly more specific while preserving keywords */}
+            {/* Subhead - Kansas City Context */}
             <p className="text-lg text-neutral-600 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              One team guides your kitchen, bathroom, or whole-home remodel from
-              concept to completion. Kansas City&apos;s design-build approach
-              with clear communication and thoughtful planning.
+              One team handles your kitchen, bathroom, or whole-home remodel from concept to completion. No handoffs, no surprises.
             </p>
 
             {/* CTAs */}
