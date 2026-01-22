@@ -6,8 +6,24 @@ import Image from "next/image";
 import { ArrowRight, Grid3x3, MapPin } from "lucide-react";
 import FinalCTA from "@/components/homepage/FinalCTA";
 
+// Type definition for projects
+type Project = {
+  id: string;
+  title: string;
+  location: string;
+  neighborhood: string;
+  service: string;
+  date: string;
+  image: string;
+  images: string[];
+  summary: string;
+  hasBeforeAfter: boolean;
+  lat: number;
+  lng: number;
+};
+
 // Unified projects data - shared by gallery and map
-const projects = [
+const projects: Project[] = [
   {
     id: "kitchen-remodel-kansas-city",
     title: "Modern Kitchen Transformation",
@@ -142,7 +158,7 @@ function BeforeAfterToggle({
 }
 
 // Styled Static Map Preview Component
-function MapPreview({ projects }: { projects: typeof projects }) {
+function MapPreview({ projects }: { projects: Project[] }) {
   return (
     <div className="relative w-full h-[600px] bg-gradient-to-br from-neutral-50 via-neutral-100 to-neutral-50 rounded-[16px] overflow-hidden border border-neutral-200 shadow-inner">
       {/* Subtle map texture */}
