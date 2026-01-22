@@ -6,7 +6,7 @@ import Image from "next/image";
 import { ArrowRight, Grid3x3, MapPin } from "lucide-react";
 import FinalCTA from "@/components/homepage/FinalCTA";
 
-// Type definition for projects
+// Type definition for projects - fixes circular type reference
 type Project = {
   id: string;
   title: string;
