@@ -74,7 +74,7 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance leading-tight">
-              Design-build remodeling that operates with controlled scope, schedule, and finished results.
+              Design-build remodeling with controlled scope, schedule, and finished results.
             </h1>
 
             {/* Subhead */}
