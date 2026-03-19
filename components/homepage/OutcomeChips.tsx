@@ -6,30 +6,30 @@ import { CheckCircle2 } from "lucide-react";
 
 const differentiators = [
   {
-    title: "One Team, Full Accountability",
+    title: "Single Team, Full Accountability",
     description:
-      "Design and construction under one roof. No handoffs, no confusion.",
+      "Design and construction under one roof—fewer handoffs, faster decisions.",
     image: "https://goldhearthomes.com/wp-content/uploads/2022/09/005_1600x1067_mls.jpg",
     alt: "Professional design-build team in Kansas City",
   },
   {
     title: "Fixed Pricing, No Surprises",
     description:
-      "Complete scope and pricing before construction begins.",
+      "Scope and pricing are finalized before construction begins.",
     image: "https://goldhearthomes.com/wp-content/uploads/2022/07/DSC_0005.jpg",
     alt: "Detailed planning and transparent pricing",
   },
   {
     title: "Respectful, Livable Remodeling",
     description:
-      "Clean job sites and daily communication. You can stay in your home.",
+      "Clean, protected job sites and daily communication so you can stay in your home.",
     image: "https://goldhearthomes.com/wp-content/uploads/2022/09/006_1600x1067_mls.jpg",
     alt: "Clean, organized remodeling workspace",
   },
   {
     title: "5-Year Warranty",
     description:
-      "Comprehensive coverage on workmanship, materials, and installation.",
+      "Workmanship, materials, and installation covered for five years.",
     image: "https://goldhearthomes.com/wp-content/uploads/2022/06/kitchen-remodeling-kansas-city.jpg",
     alt: "Quality craftsmanship and warranty protection",
   },
@@ -65,10 +65,11 @@ export default function OutcomeChips() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
-            Why Homeowners Choose Gold Heart Homes
+            What Homeowners Get With Gold Heart Homes
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Design-build remodeling that removes the stress from home renovation.
+            A design-build remodeling process with clear scope, documented decisions,
+            and one accountable team.
           </p>
         </div>
 

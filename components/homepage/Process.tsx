@@ -7,20 +7,23 @@ import { ArrowRight } from "lucide-react";
 
 const steps = [
   {
-    title: "Consultation",
-    description: "We understand your goals and define scope before design begins.",
+    title: "Discovery & Scope",
+    description:
+      "We confirm your goals, measure constraints, and define scope before design begins.",
     image: "https://goldhearthomes.com/wp-content/uploads/2022/07/DSC_0001.jpg",
     alt: "Design consultation in Kansas City",
   },
   {
-    title: "Design & Planning",
-    description: "Detailed plans and material selections. You approve everything before construction.",
+    title: "Design & Preconstruction Plan",
+    description:
+      "Drawings, selections, and a fixed scope you approve before construction starts.",
     image: "https://goldhearthomes.com/wp-content/uploads/2022/07/DSC_0007.jpg",
     alt: "Design planning and material selection",
   },
   {
-    title: "Construction",
-    description: "One team manages your project from start to finish with clear communication.",
+    title: "Build & Project Management",
+    description:
+      "One accountable team manages your project from start to finish with documented communication.",
     image: "https://goldhearthomes.com/wp-content/uploads/2022/09/007_1600x1067_mls.jpg",
     alt: "Professional construction management",
   },
@@ -56,10 +59,10 @@ export default function Process() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
-            Our Design-Led Process
+            Design-Led Delivery Process
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Upfront scope, collaborative design, and full accountability from start to finish.
+            Upfront scope, coordinated design, and one accountable team from planning through completion.
           </p>
         </div>
 

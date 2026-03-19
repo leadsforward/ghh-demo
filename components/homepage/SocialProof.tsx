@@ -102,14 +102,14 @@ export default function SocialProof() {
               
               {/* Testimonial Content */}
               <div className="p-8 lg:p-10">
-                <p className="text-neutral-700 mb-6 leading-relaxed italic">
+                <p className="text-neutral-800 mb-7 leading-relaxed italic">
                   &quot;{testimonial.text}&quot;
                 </p>
-                <div className="border-t border-neutral-200 pt-6">
-                  <div className="font-semibold text-neutral-900 mb-1">
+                <div className="border-t border-neutral-200 pt-7">
+                  <div className="text-base lg:text-lg font-semibold text-neutral-900 mb-1 leading-tight">
                     {testimonial.name}
                   </div>
-                  <div className="text-sm text-neutral-600">
+                  <div className="text-sm text-neutral-600 leading-relaxed">
                     {testimonial.location} · {testimonial.project}
                   </div>
                 </div>

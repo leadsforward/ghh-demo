@@ -89,14 +89,14 @@ export default function FlexSection() {
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="bg-neutral-50 border-b-2 border-neutral-200">
-                  <th className="px-6 py-5 text-left text-base font-semibold text-neutral-900">
+                <tr className="bg-neutral-50 border-b border-neutral-200">
+                  <th className="px-6 py-6 text-left text-sm font-semibold text-neutral-900">
                     What matters during a remodel
                   </th>
-                  <th className="px-6 py-5 text-center text-base font-semibold text-primary-700 bg-primary-50/50">
+                  <th className="px-6 py-6 text-center text-sm font-semibold text-primary-700 bg-primary-50/40">
                     Our Approach
                   </th>
-                  <th className="px-6 py-5 text-center text-base font-semibold text-neutral-700">
+                  <th className="px-6 py-6 text-center text-sm font-semibold text-neutral-700">
                     Industry Norms
                   </th>
                 </tr>
@@ -105,15 +105,15 @@ export default function FlexSection() {
                 {comparisons.map((row, index) => (
                   <tr
                     key={index}
-                    className="border-b border-neutral-100 last:border-0 bg-white hover:bg-neutral-50/30 transition-colors"
+                    className="border-b border-neutral-100 last:border-0 bg-white hover:bg-neutral-50/20 transition-colors"
                   >
-                    <td className="px-6 py-6 text-neutral-700 font-medium text-base">
+                    <td className="px-6 py-6 text-neutral-700 font-medium text-sm leading-relaxed">
                       {row.feature}
                     </td>
-                    <td className="px-6 py-6 text-center bg-primary-50/30">
+                    <td className="px-6 py-6 text-center bg-primary-50/20">
                       {row.ourApproach ? (
                         <div className="flex items-center justify-center">
-                          <Check className="w-6 h-6 text-primary-600" />
+                          <Check className="w-5 h-5 text-primary-600" />
                         </div>
                       ) : (
                         <Minus className="w-5 h-5 text-neutral-300 mx-auto" />

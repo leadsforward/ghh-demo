@@ -103,11 +103,14 @@ export default function CoreBenefits() {
     <section className="bg-white py-20 lg:py-32">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
+          <p className="text-sm font-semibold text-primary-600 mb-3 uppercase tracking-wide">
+            One accountable design-build team
+          </p>
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
             Our Services
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Interior and exterior remodeling, additions, and commercial projects in Kansas City. Design-led approach with full-scope capability.
+            Interior and exterior remodeling, additions, and commercial projects in Kansas City. Design-led planning delivered by one accountable team from scope through closeout.
           </p>
         </div>
 

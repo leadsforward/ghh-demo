@@ -7,11 +7,11 @@ export default function FinalCTA() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4">
-            Ready to plan your remodel?
+            Scope and clarity first. Control through completion.
           </h2>
           <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-            A thoughtful conversation is the first step. We&apos;ll listen, answer
-            questions, and help you understand what&apos;s possible for your home.
+            We start with a structured conversation to confirm goals, outline
+            scope, and explain how decisions stay documented through closeout.
           </p>
           <Link
             href="/contact"

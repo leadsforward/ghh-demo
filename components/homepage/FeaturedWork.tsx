@@ -9,6 +9,8 @@ const featuredProjects = [
   {
     title: "Kitchen Remodel",
     location: "Kansas City, MO",
+    description:
+      "A kitchen transformation with a refined layout, custom cabinetry, and premium finishes.",
     image: "https://goldhearthomes.com/wp-content/uploads/2022/06/kitchen-remodeling-kansas-city.jpg",
     alt: "Kitchen remodeling project in Kansas City - Gold Heart Homes",
     href: "/projects/kitchen-remodel-kansas-city",
@@ -16,6 +18,8 @@ const featuredProjects = [
   {
     title: "Living Room Remodel",
     location: "Kansas City, MO",
+    description:
+      "An updated living space with cohesive finishes and improved flow for everyday living.",
     image: "https://goldhearthomes.com/wp-content/uploads/2022/06/modern-living-room-remodel-kansas-city.jpg",
     alt: "Living room remodeling project in Kansas City - Gold Heart Homes",
     href: "/projects/living-room-remodel-kansas-city",
@@ -55,7 +59,7 @@ export default function FeaturedWork() {
             Featured Work
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Real projects from Kansas City homeowners. See how we transform spaces with thoughtful design and disciplined execution.
+            Kansas City projects planned with clear scope and executed with discipline. See the transformation from design to finish.
           </p>
         </div>
 
@@ -85,7 +89,10 @@ export default function FeaturedWork() {
                 <h3 className="text-2xl font-serif font-semibold text-neutral-900 mb-2">
                   {project.title}
                 </h3>
-                <p className="text-neutral-600 mb-4">{project.location}</p>
+                <p className="text-neutral-600 mb-1">{project.location}</p>
+                <p className="text-sm text-neutral-600 mb-4 leading-relaxed">
+                  {project.description}
+                </p>
                 <div className="inline-flex items-center text-primary-600 font-semibold group-hover:text-primary-700 transition-colors">
                   View Project
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
