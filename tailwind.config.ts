@@ -9,17 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        brand: {
+          navy: "#072B61",
+          offwhite: "#F7F6F2",
+          charcoal: "#1D1D1D",
+          gold: "#B89B5E",
+        },
         primary: {
-          50: "#e6f0f7",
-          100: "#cce1ef",
-          200: "#99c3df",
-          300: "#66a5cf",
-          400: "#3387bf",
-          500: "#0069af", // Classic KC Royals-inspired blue
-          600: "#004687", // Main primary - confident, architectural blue
-          700: "#003366", // Darker for hover states and depth
-          800: "#002244", // Very dark for contrast
-          900: "#001122", // Darkest for text/accents
+          50: "#EEF3FA",
+          100: "#DDE7F6",
+          200: "#BCD0ED",
+          300: "#93B2E0",
+          400: "#5F86CE",
+          500: "#2F5FB8",
+          600: "#072B61", // Primary Navy (brand)
+          700: "#062554", // Subtle hover darkening
+          800: "#041B44",
+          900: "#02102A",
         },
         neutral: {
           50: "#fafafa",

@@ -80,8 +80,8 @@ export default function Header() {
             prefersReducedMotion ? "transition-none" : ""
           } ${
             isScrolled
-              ? "max-w-[1200px] bg-white/95 backdrop-blur-[10px] rounded-2xl shadow-lg border border-neutral-200/50"
-              : "w-full bg-white"
+              ? "max-w-[1200px] bg-brand-offwhite/95 backdrop-blur-[10px] rounded-2xl shadow-lg border border-neutral-200/60"
+              : "w-full bg-brand-offwhite"
           }`}
           style={{
             transitionTimingFunction: "ease-out",
@@ -96,10 +96,10 @@ export default function Header() {
             >
               <div className="flex items-center gap-2">
                 <div className="relative">
-                  <div className="text-3xl font-serif font-bold text-neutral-900 group-hover:text-primary-700 transition-colors tracking-tight">
+                  <div className="text-3xl font-serif font-bold text-brand-charcoal group-hover:text-primary-700 transition-colors tracking-tight">
                     GHH
                   </div>
-                  <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                  <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brand-gold transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
                 </div>
               </div>
             </Link>

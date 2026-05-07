@@ -9,12 +9,19 @@ This document is aligned to the repo’s current Tailwind setup:
   - body text: `font-sans`/`Inter` (via `globals.css` + Tailwind config)
 
 ## Color palette (use as-is)
-- Primary (CTAs + accents): `primary.600` / `primary.700` (`bg-primary-600`, `hover:bg-primary-700`)
+- Primary (CTAs + accents): **Primary Navy** via `primary.600` / `primary.700` (`bg-primary-600`, `hover:bg-primary-700`)
 - Surfaces: `bg-white`, `bg-neutral-50`, `bg-neutral-900`
 - Text: `text-neutral-900` (headlines), `text-neutral-700/600` (body), `text-neutral-500` (supporting)
 - Borders: `border-neutral-200/300/100`
-- Minimal warm accent:
-  - used for trust signals (e.g., rating stars currently use yellow)
+- Brand palette helpers (Tailwind):
+  - `brand.navy`: `#072B61`
+  - `brand.offwhite`: `#F7F6F2`
+  - `brand.charcoal`: `#1D1D1D`
+  - `brand.gold` (use sparingly): `#B89B5E`
+
+Rules:
+- Main page background should default to `bg-brand-offwhite` with charcoal text.
+- Gold is only for micro accents (thin underlines/dividers/active indicators), never for large fills.
 
 ## Typography hierarchy (keep consistent)
 Use the existing “scale” already present in components:

@@ -30,3 +30,12 @@ This log exists so future work stays aligned with the Gold Heart Homes strategy.
 - Docs affected:
   - `PROJECT_CONTEXT.md` (updated homepage section order to reflect current build)
 
+---
+
+## Brand Palette Refresh (Prototype Theme)
+- Date: `2026-05-07`
+- What changed: Updated Tailwind theme to support the new brand palette (Primary Navy, Off White, Charcoal, Muted Gold) and applied it globally (background/text) plus refined header/footer styling to match.
+- Why it changed: Elevate the site toward a calmer, more editorial, architectural feel while preserving layout and conversion structure.
+- Docs affected:
+  - `DESIGN_SYSTEM.md`
+

@@ -13,7 +13,7 @@
   }
 
   body {
-    @apply bg-white text-neutral-900 antialiased;
+    @apply bg-brand-offwhite text-brand-charcoal antialiased;
     font-family: var(--font-inter);
   }
 
@@ -43,11 +43,12 @@ img {
   @apply outline-2 outline-offset-2 outline-primary-600;
 }
 
-/* KC Blue - Architectural and Established */
+/* Brand tokens (for non-Tailwind usage where needed) */
 :root {
-  --kc-blue: #004687;
-  --kc-blue-dark: #003366;
-  --kc-blue-darker: #002244;
+  --brand-navy: #072b61;
+  --brand-offwhite: #f7f6f2;
+  --brand-charcoal: #1d1d1d;
+  --brand-gold: #b89b5e;
 }
 
 /* Smooth scroll behavior */
