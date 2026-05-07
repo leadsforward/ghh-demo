@@ -5,7 +5,7 @@ This document is aligned to the repo’s current Tailwind setup:
 - `primary` color family: `text-primary-*` (architectural blue)
 - `neutral` grayscale: `bg-neutral-*`, `text-neutral-*`, `border-neutral-*`
 - typography from `next/font/google`:
-  - serif headlines: `font-serif` (Playfair Display)
+  - serif headlines: `font-serif` (Cormorant Garamond)
   - body text: `font-sans`/`Inter` (via `globals.css` + Tailwind config)
 
 ## Color palette (use as-is)
@@ -35,6 +35,7 @@ Use the existing “scale” already present in components:
 Rules:
 - do not introduce random font sizes; reuse the patterns already present in existing components
 - keep line-length reasonable (Tailwind typography config sets max width)
+- headings use slightly tighter tracking globally; `h1` has a slightly more spacious line-height for an editorial feel
 
 ## Spacing system (vertical rhythm)
 Reuse the repo’s section containers:

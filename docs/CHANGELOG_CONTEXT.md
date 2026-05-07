@@ -39,3 +39,12 @@ This log exists so future work stays aligned with the Gold Heart Homes strategy.
 - Docs affected:
   - `DESIGN_SYSTEM.md`
 
+---
+
+## Typography System Update (Cormorant + Inter)
+- Date: `2026-05-07`
+- What changed: Updated the font system so headings use Cormorant Garamond and body/UI uses Inter, with subtle global heading tracking tightening and slightly increased `h1` line-height.
+- Why it changed: Align typography with a premium editorial, architectural tone while preserving layout and whitespace hierarchy.
+- Docs affected:
+  - `DESIGN_SYSTEM.md`
+

@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --font-inter: "Inter", system-ui, sans-serif;
-    --font-playfair: "Playfair Display", Georgia, serif;
+    --font-cormorant: "Cormorant Garamond", Georgia, serif;
   }
 
   * {
@@ -23,7 +23,11 @@
   h4,
   h5,
   h6 {
-    @apply font-serif;
+    @apply font-serif tracking-tight;
+  }
+
+  h1 {
+    @apply leading-[1.08];
   }
 }
 
